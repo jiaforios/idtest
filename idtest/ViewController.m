@@ -59,6 +59,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSLog(@"cell.text = %@",cell.textLabel.text);
 }
 
 
